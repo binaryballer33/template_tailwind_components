@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
-import { NavBar, Home, Footer, Information, Hero } from "./components"
+import { NavBar, Home, Footer, Information, Hero, HeroImage } from "./components"
 
-function App() {
+export default function App() {
   return (
     <Router>
       <Routes>
@@ -13,6 +13,7 @@ function App() {
               <Routes>
                 <Route index element={<Home />} />
                 <Route path="hero" element={<Hero />} />
+                <Route path="heroimage" element={<HeroImage />} />
                 <Route path="info1" element={<Information />} /> {/* Section 2  */}
                 {/* just demonstrating how to use to nested routes, because I always forget */}
                 <Route path="/home/*" element={<Home />}>
@@ -31,5 +32,3 @@ function App() {
     </Router>
   )
 }
-
-export default App

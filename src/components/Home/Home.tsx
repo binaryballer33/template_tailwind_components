@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom"
 import Hero from "../Hero/Hero"
 
-function Home() {
+export default function Home() {
   return (
     <div
       style={{
@@ -14,12 +14,9 @@ function Home() {
       }}
     >
       <Hero />
-      <h1>Hello World</h1>
 
       {/* Need this in order to show the components being rendered as sub routes after this */}
       <Outlet />
     </div>
   )
 }
-
-export default Home

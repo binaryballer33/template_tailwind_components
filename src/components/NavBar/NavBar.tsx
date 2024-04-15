@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Dialog } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 
-function NavBar() {
+export default function NavBar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navigation = [
@@ -101,5 +101,3 @@ function NavBar() {
     </header>
   )
 }
-
-export default NavBar

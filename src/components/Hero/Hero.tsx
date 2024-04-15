@@ -1,4 +1,4 @@
-function Hero() {
+export default function Hero() {
   return (
     <div className="bg-white">
       <div className="relative isolate pt-14">
@@ -65,5 +65,3 @@ function Hero() {
     </div>
   )
 }
-
-export default Hero
