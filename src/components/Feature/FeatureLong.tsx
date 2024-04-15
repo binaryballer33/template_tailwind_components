@@ -7,7 +7,7 @@ import {
   ServerIcon,
 } from "@heroicons/react/20/solid"
 
-export default function MarketingLong() {
+export default function FeatureLong() {
   const features = [
     {
       name: "Push to deploy.",

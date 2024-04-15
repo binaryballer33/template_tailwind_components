@@ -6,8 +6,9 @@ import {
   Information,
   Hero,
   HeroImage,
-  MarketingShort,
-  MarketingLong,
+  FeatureShort,
+  FeatureLong,
+  FeatureInformation,
 } from "./components"
 
 export default function App() {
@@ -23,14 +24,16 @@ export default function App() {
                 <Route index element={<Home />} />
                 <Route path="hero" element={<Hero />} />
                 <Route path="heroimage" element={<HeroImage />} />
-                <Route path="marketingshort" element={<MarketingShort />} />
-                <Route path="marketinglong" element={<MarketingLong />} />
+                <Route path="featureshort" element={<FeatureShort />} />
+                <Route path="marketinglong" element={<FeatureLong />} />
                 <Route path="info1" element={<Information />} />
+
                 {/* just demonstrating how to use to nested routes, because I always forget */}
                 <Route path="/home/*" element={<Home />}>
-                  <Route path="cards" element={<Home />} /> {/* Cards Section 1 */}
-                  <Route path="marketingshort" element={<MarketingShort />} />
-                  <Route path="marketinglong" element={<MarketingLong />} />
+                  <Route path="cards" element={<Home />} />
+                  <Route path="featureinformation" element={<FeatureInformation />} />
+                  <Route path="featureshort" element={<FeatureShort />} />
+                  <Route path="marketinglong" element={<FeatureLong />} />
                   <Route path="pricing" element={<Home />} /> {/* Pricing Section With Toggle */}
                   <Route path="faq" element={<Home />} /> {/* FAQ Accordion */}
                 </Route>

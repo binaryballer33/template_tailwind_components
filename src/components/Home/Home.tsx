@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom"
 import Hero from "../Hero/Hero"
-import MarketingShort from "../Marketing/MarketingShort"
-import MarketingLong from "../Marketing/MarketingLong"
+import FeatureShort from "../Feature/FeatureShort"
+import FeatureLong from "../Feature/FeatureLong"
 
 export default function Home() {
   return (
@@ -16,8 +16,8 @@ export default function Home() {
       }}
     >
       <Hero />
-      <MarketingShort />
-      <MarketingLong />
+      <FeatureShort />
+      <FeatureLong />
 
       {/* Need this in order to show the components being rendered as sub routes after this */}
       <Outlet />

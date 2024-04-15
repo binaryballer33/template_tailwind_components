@@ -5,7 +5,7 @@ import {
   LockClosedIcon,
 } from "@heroicons/react/24/outline"
 
-export default function MarketingShort() {
+export default function FeatureShort() {
   const features = [
     {
       name: "Push to deploy",
