@@ -3,12 +3,16 @@ import {
   NavBar,
   Home,
   Footer,
-  Information,
   Hero,
   HeroImage,
   FeatureShort,
   FeatureLong,
   FeatureInformation,
+  FeatureWithImage,
+  PricingCards,
+  PricingPlanComparisons,
+  Team,
+  FAQ,
 } from "./components"
 
 export default function App() {
@@ -25,17 +29,24 @@ export default function App() {
                 <Route path="hero" element={<Hero />} />
                 <Route path="heroimage" element={<HeroImage />} />
                 <Route path="featureshort" element={<FeatureShort />} />
-                <Route path="marketinglong" element={<FeatureLong />} />
-                <Route path="info1" element={<Information />} />
+                <Route path="featurelong" element={<FeatureLong />} />
+                <Route path="featurewithimage" element={<FeatureWithImage />} />
+                <Route path="pricingcards" element={<PricingCards />} />
+                <Route path="pricingplancomparisons" element={<PricingPlanComparisons />} />
+                <Route path="team" element={<Team />} />
+                <Route path="faq" element={<FAQ />} />
 
                 {/* just demonstrating how to use to nested routes, because I always forget */}
                 <Route path="/home/*" element={<Home />}>
                   <Route path="cards" element={<Home />} />
                   <Route path="featureinformation" element={<FeatureInformation />} />
                   <Route path="featureshort" element={<FeatureShort />} />
-                  <Route path="marketinglong" element={<FeatureLong />} />
-                  <Route path="pricing" element={<Home />} /> {/* Pricing Section With Toggle */}
-                  <Route path="faq" element={<Home />} /> {/* FAQ Accordion */}
+                  <Route path="featurelong" element={<FeatureLong />} />
+                  <Route path="featurewithimage" element={<FeatureWithImage />} />
+                  <Route path="pricingcards" element={<PricingCards />} />
+                  <Route path="pricingplancomparisons" element={<PricingPlanComparisons />} />
+                  <Route path="team" element={<Team />} />
+                  <Route path="faq" element={<FAQ />} />
                 </Route>
               </Routes>
               <Footer />
