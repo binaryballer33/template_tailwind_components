@@ -11,3 +11,4 @@ export { default as PricingPlanComparisons } from "./Pricing/PricingPlanComparis
 export { default as Team } from "./Team/Team"
 export { default as FAQ } from "./Accordion/FaqAccordion"
 export { default as Footer } from "./Footer/Footer"
+export { default as PageNotFoundShort } from "./PageNotFound/PageNotFoundShort"
