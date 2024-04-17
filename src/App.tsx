@@ -14,6 +14,7 @@ import {
   Team,
   FAQ,
   PageNotFoundShort,
+  PageNotFoundWithImage,
 } from "./components"
 
 export default function App() {
@@ -36,7 +37,8 @@ export default function App() {
                 <Route path="pricingplancomparisons" element={<PricingPlanComparisons />} />
                 <Route path="team" element={<Team />} />
                 <Route path="faq" element={<FAQ />} />
-                <Route path="pagenotfound" element={<PageNotFoundShort />} />
+                <Route path="pagenotfound" element={<PageNotFoundWithImage />} />
+                <Route path="*" element={<PageNotFoundShort />} />
 
                 {/* just demonstrating how to use to nested routes, because I always forget */}
                 <Route path="/home/*" element={<Home />}>
@@ -49,7 +51,8 @@ export default function App() {
                   <Route path="pricingplancomparisons" element={<PricingPlanComparisons />} />
                   <Route path="team" element={<Team />} />
                   <Route path="faq" element={<FAQ />} />
-                  <Route path="pagenotfound" element={<PageNotFoundShort />} />
+                  <Route path="pagenotfound" element={<PageNotFoundWithImage />} />
+                  <Route path="*" element={<PageNotFoundShort />} />
                 </Route>
               </Routes>
               <Footer />
