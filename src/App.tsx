@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import {
   NavBar,
+  SideBar,
   Home,
   Footer,
   Hero,
@@ -38,6 +39,7 @@ export default function App() {
                 <Route path="team" element={<Team />} />
                 <Route path="faq" element={<FAQ />} />
                 <Route path="pagenotfound" element={<PageNotFoundWithImage />} />
+                <Route path="sidebar" element={<SideBar />} />
                 <Route path="*" element={<PageNotFoundShort />} />
 
                 {/* just demonstrating how to use to nested routes, because I always forget */}

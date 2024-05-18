@@ -90,7 +90,7 @@ export default function NavBar() {
   }
 
   return (
-    <header className="relative isolate z-10 bg-white">
+    <header className="sticky top-0 isolate z-10 bg-white">
       <nav
         className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -108,7 +108,7 @@ export default function NavBar() {
         </div>
 
         {/* Mobile View Hamburger Icon */}
-        <div className="flex lg:hidden">
+        <div className="flex md:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
@@ -120,7 +120,7 @@ export default function NavBar() {
         </div>
 
         {/* Desktop View Dropdown Menu */}
-        <Popover.Group className="hidden lg:flex lg:gap-x-12">
+        <Popover.Group className="hidden md:flex md:gap-x-12">
           {/* Product Dropdown Menu  */}
           <Popover>
             <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
@@ -292,7 +292,7 @@ export default function NavBar() {
       </nav>
 
       {/* Mobile View Slide In NavBar */}
-      <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog as="div" className="md:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 flex w-full flex-col justify-between overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="p-6">

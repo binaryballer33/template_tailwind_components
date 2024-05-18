@@ -1,4 +1,5 @@
 export { default as NavBar } from "./NavBar/NavBar"
+export { default as SideBar } from "./SideBar/SideBar"
 export { default as Home } from "./Home/Home"
 export { default as Hero } from "./Hero/Hero"
 export { default as HeroImage } from "./Hero/HeroImage"
